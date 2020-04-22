@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+message ExposeeResponse {
+   uint64 batch = 1;
+   uint64 validUntil = 2;
+   repeated Exposee results = 3;
+ }
+ 
+ message Exposee {
+   uint64 onset = 1;
+   bytes key = 2;
+ }
